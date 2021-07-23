@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Nunito;
+}
+.container{
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+:root{
+    --primary-color:#ddbdbdf0;
+}
+body{
+    background: url(https://wallpaperaccess.com/full/139854.jpg) no-repeat center center/cover;
+    position: relative;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    display: inline-block;
+    width: max-content;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+input,label{
+    font-weight: 700;
+}
+input:focus{
+    outline: none;
+}
+img{
+    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+}
+h1,h2,h3{
+    background: var(--primary-color);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* index */
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+#page_group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#page_group>div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+}
+/* output div */
+.output_box{
+    display: none;
+    text-align: center;
+    margin: 10px ;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+/* buttons */
+.btn_main{
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    margin: 10px;
+    font-weight: 800;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+.btn_main:hover{
+    transform: scale(1.05);
+    opacity: 1.1;
+    box-shadow: var(--primary-color) 0px 30px 60px -12px inset, #333 0px 18px 36px -18px inset;
+}
+.btn_sub{
+    background: var(--primary-color);
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 8px 16px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.btn_sub:hover{
+    transform: scale(1.05);
+}
+
+/* back button */
+#back_to_home{
+    background-color: var(--primary-color);
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+#back_to_home:hover{
+    transform: rotate(-5deg);
+}
+/* angles html */
+#angle_main{
+    padding: 20px;
+    text-align: center;
+}
+#angles_sub{
+    display: flex;
+    flex-direction: column;
+}
+#angles_sub>*{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+#angles_sub>*:focus{
+    outline: none;
+}
+
+/* hyptonuse */
+#hyptop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#formHyp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#formHyp>*{
+    padding: 10px;
+}
+#formHyp input{
+    border-radius: 10px;
+    border: none;
+    padding: 10px ;
+}
+
+/* area html */
+#area_select{
+    padding: 20px;
+}
+input[type=radio]{
+    width: 16px;
+    height: 16px;
+    margin: 7px;
+}
+#area_select div{
+    margin-bottom: 15px;
+}
+#area_select label{
+    background: var(--primary-color);
+    padding:5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#base_height,#given_lengths,#sides_angle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.forms{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.forms input{
+    padding: 7px 14px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+/* quiz css */
+.top{
+    margin: 20px;
+    background:var(--primary-color);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    font-weight: 700;
+}
+#quiz_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+footer #social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+}
+#social a{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 50%;
+}
+#social a:hover{
+    border: 1px solid var(--primary-color);
+}
+
+/* mobile */
+@media screen and (max-width:450px){
+    h1,h2,h3{
+        border-radius: 10px;
+        padding: 8px;
+        font-size: 22px;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #page_group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    #page_group>div{
+        margin: 5px;
+    }
+    .btn_main{
+        padding: 15px;
+        font-size: medium;
+    }
+    .top{
+        margin-bottom: 5px;
+        background:var(--primary-color);
+        border-radius: 20px;
+        padding: 10px;
+        width: 90%;
+    }
+}

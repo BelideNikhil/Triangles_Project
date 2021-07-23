@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./JS-files/area.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html"  id="back_to_home">BACK TO HOME</a>
+        <h3>Select an option below as per the data you have for a triangle</h3>
+    </div>
+    <div class="container" id="area_select">
+        <form>
+            <div>
+                <input type="radio" name="contact" class="check_one" id="contactChoice1">
+                <label for="contactChoice1">If you have base and height length</label>
+            </div>
+            <div>
+                <input type="radio" name="contact" class="check_two"  id="contactChoice2">
+                <label for="contactChoice2"> If you have length of 3 sides</label>
+            </div>
+            <div>
+                <input type="radio" name="contact"  class="check_three" id="contactChoice3">
+                <label for="contactChoice3">You have 2 sides and an angle</label>
+            </div>
+          </form>
+    </div>
+
+    <div class="container">
+        <div id="base_height">
+            <img src="./Images/base_height.png" alt="" srcset="">
+            <form action="/" id="form_one" class="forms">
+                <div>
+                    <label for="base">B : </label>
+                    <input type="number" name="base" id="base" min="1" required>
+                </div>
+                <div>
+                    <label for="height">H : </label>
+                    <input type="number" name="height" id="height" min="1" required>
+                </div>
+                <button type="submit" id="btn1" class="btn_sub">submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div id="given_lengths">
+            <img src="./Images/three_sides.jpg" alt="" srcset="">
+            <form class="forms">
+                <div>
+                    <label for="side1">Side1 : </label>
+                    <input type="number" name="side1" id="side1" min="0.0001" required>
+                </div>
+                <div>
+                    <label for="side2">Side2 : </label>
+                    <input type="number" name="side2" id="side2" min="0.0001" required>
+                </div>
+                <div>
+                    <label for="side3">Side3 : </label>
+                    <input type="number" name="side3" id="side3" min="0.0001" required>
+                </div>
+                <button type="submit" id="btn2" class="btn_sub">submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div id="sides_angle">
+            <img src="./Images/2side-angle.gif" alt="" srcset="">
+            <form action="/" class="forms">
+                <div>
+                    <label for="sideA_one">Side1 : </label>
+                    <input type="number" name="sideA_one" id="sideA_one" min="1" required>
+                </div>
+                <div>
+                    <label for="sideA_two">Side2 : </label>
+                    <input type="number" name="sideA_two" id="sideA_two" min="1" required>
+                </div>
+                <div>
+                    <label for="angle">Angle : </label>
+                    <input type="number" name="angle" id="angle" min="0" max="360" required>
+                </div>
+                <button type="submit" id="btn3" class="btn_sub">submit</button>
+            </form>
+        </div>
+    </div>    
+
+    <div class="container">
+        <div class="output_box"></div>
+    </div>
+</body>
+</html>
