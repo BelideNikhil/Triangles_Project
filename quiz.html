@@ -12,9 +12,44 @@
 <body>
     <div class="container" id="quiz_body">
         <a href="./index.html" id="back_to_home">BACK TO HOME</a>
-        <div id="quiz"></div>
-        <div class="output_box">Please answer all the questions to check the score</div>
-        <button id="submit" class="btn_sub">Get Results</button>
+        <form class="quizForm">
+            <div class="quiz_container">
+                <p>1. If a triangle has angles 135', 15', 30'. Is it an obtuse triangle?</p>
+                <label ><input type="radio" name="question1" value='YES' required>YES</label>
+                <label ><input type="radio" name="question1" value='NO' required>NO</label>
+            </div>
+            <div class="quiz_container">
+                <p>2. An triangle has 2 equal angles, which are the angles opposite the 2 equal sides is?</p>
+                <label><input type="radio" name="question2" value='RIGHT ANGLE' required>RIGHT ANGLE</label>
+                <label><input type="radio" name="question2" value='ISOCELES' required>ISOCELES</label>
+                <label><input type="radio" name="question2" value='EQUILATERAL' required>EQUILATERAL</label>
+            </div>
+            <div class="quiz_container">
+                <p>3. An exterior angle of a triangle is equal to the sum of the two opposite interior angles.</p>
+                <label ><input type="radio" name="question3" value='RIGHT' required>RIGHT</label>
+                <label ><input type="radio" name="question3" value='WRONG' required>WRONG</label>
+            </div>
+            <div class="quiz_container">
+                <p>4. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</p>
+                <label><input type="radio" name="question4" value='15cm' required>15cm</label>
+                <label><input type="radio" name="question4" value='45cm' required>45cm</label>
+                <label><input type="radio" name="question4" value='5cm' required>5cm</label>
+            </div>
+            <div class="quiz_container">
+                <p>5. A scalene triangle has three different length sides, and three different angles.</p>
+                <label ><input type="radio" name="question5" value='TRUE' required>TRUE</label>
+                <label ><input type="radio" name="question5" value='FALSE' required>FALSE</label>
+            </div>
+            <div class="quiz_container">
+                <p>6.  An equilateral triangle has three equal lengths, and all the angles are equal which means they are each 60°</p>
+                <label ><input type="radio" name="question6" value='YES' required>YES</label>
+                <label ><input type="radio" name="question6" value='NO' required>NO</label>
+            </div>
+            <button id="submit" class="btn_sub">Get Results</button>
+        </form>
+       
+        <div id="output_quiz" class="output_box"></div>
+
     </div>
 
     <footer>
