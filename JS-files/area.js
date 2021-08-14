@@ -47,16 +47,7 @@ function first_display(){
         let height =document.querySelector("#height");
         base=Number(base.value);
         height=Number(height.value);
-        
-        if(base<0.0001 || height<0.0001){
-            output.innerHTML="Please enter valid data to process."
-            setTimeout(()=>{
-                output.innerHTML=`<h3>Area= 1/2*base*height</h3>`;
-            },2500)
-        }
-        else{
-            output.innerHTML=`Area=${0.5*base*height}`
-        }
+        output.innerHTML=`Area=${0.5*base*height}`
     })  
 }
 function second_display(){
@@ -101,19 +92,9 @@ function third_display(){
         a=Number(a.value)
         b=Number(b.value)
         c=Number(c.value);
-        if(c>360 || c<0){
-            output.innerHTML=`Angle cannot exceed 360 deg`
-            setTimeout(()=>{
-                output.innerHTML=`<h3>Area= 1/2*b*c*sin(A)</h3>`;
-            },2500)
-        }else if(a<0.0001 || b<0.0001){
-            output.innerHTML=`Value cant be less than 0`
-            setTimeout(()=>{
-                output.innerHTML=`<h3>Area= 1/2*b*c*sin(A)</h3>`;
-            },2500)
-        }else{
-            const area=0.5*a*b*Math.sin(c)
-            output.innerHTML=`<h3>Area=${area}`;
-        }
+        
+        const area=0.5*a*b*Math.sin(c*Math.PI/180)
+        output.innerHTML=`<h3>Area=${area}`;
+        
     })
 }

@@ -17,16 +17,10 @@ form.addEventListener("submit",(e)=>{
     let sum_of_three=angle_one+angle_two+angle_three;
 
     if(angle_one===0 || angle_two ===0|| angle_three ===0){
-        output_div.innerHTML="Please note than an each angle should be >0";
-        setTimeout(()=>{
-            output_div.innerHTML=""
-        },2500);
+        output_div.innerHTML="Please note than an each angle should be greater than 0'";
         
     }else if(sum_of_three<180 || sum_of_three > 180){
         output_div.innerHTML="OOPS! These angles cannot form triangle, Note that the sum of 3 angles should be equal 180 degrees.";
-        setTimeout(()=>{
-            output_div.innerHTML=""
-        },3000);
     }else{
         output_div.innerHTML="YAY! We can form a triangle using these."
     }

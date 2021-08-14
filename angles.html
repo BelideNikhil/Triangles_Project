@@ -16,9 +16,9 @@
     <div class="container" >
         <form action="" id="form" method="GET">
             <div id="angles_sub">
-                <input type="number"  onfocus="this.value=''"  id="angle_one" placeholder="Enter first angle" required>
-                <input type="number" onfocus="this.value=''" id="angle_two"  placeholder="Enter second angle" required>
-                <input type="number" onfocus="this.value=''" id="angle_three"  placeholder="Enter third angle" required>
+                <input type="number"  id="angle_one" placeholder="first angle" min="1" max="180" required>
+                <input type="number"  id="angle_two"  placeholder="second angle" min="1" max="180" required>
+                <input type="number"  id="angle_three"  placeholder="third angle" min="1" max="180" required>
             </div>
            <input type="submit" id="checker" class="btn_sub">
         </form>

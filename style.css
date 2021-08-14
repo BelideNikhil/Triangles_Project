@@ -90,8 +90,7 @@ h1,h2,h3{
     display: inline-block;
 }
 .btn_main:hover{
-    transform: scale(1.05);
-    opacity: 1.1;
+    transform: scale(0.95);
     box-shadow: var(--primary-color) 0px 30px 60px -12px inset, #333 0px 18px 36px -18px inset;
 }
 .btn_sub{
@@ -234,9 +233,6 @@ footer #social{
     margin: 5px;
     padding: 15px;
     border-radius: 50%;
-}
-#social a:hover{
-    border: 1px solid var(--primary-color);
 }
 
 /* mobile */
