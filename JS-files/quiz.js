@@ -4,7 +4,7 @@ const output=document.querySelector("#output_quiz")
 const submitQuiz=document.querySelector("#submit")
 const quizContainer=document.querySelectorAll(".quiz_container")
 
-let correctAns=["YES","ISOCELES","RIGHT","15cm","TRUE","YES"]
+let correctAns=["YES","ISOCELES","RIGHT","5cm","TRUE","YES"]
 
 quizForm.addEventListener("submit",(e)=>{
     e.preventDefault()
